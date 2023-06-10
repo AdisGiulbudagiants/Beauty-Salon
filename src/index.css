@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "EbBold";
+  src: url("./components/fonts/EBGaramond-Bold.ttf");
+}
+@font-face {
+  font-family: "EbRegular";
+  src: url("./components/fonts/EBGaramond-Regular.ttf");
+}
+@font-face {
+  font-family: "CormorantBold";
+  src: url("./components/fonts/cormorant-garamond-bold.ttf");
+}
+@font-face {
+  font-family: "CormorantRegular";
+  src: url("./components/fonts//EBGaramond-Regular.ttf");
+}
+@font-face {
+  font-family: "CormorantSemibold";
+  src: url("./components/fonts/cormorant-garamond-semibold.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  @apply overflow-x-hidden
 }
