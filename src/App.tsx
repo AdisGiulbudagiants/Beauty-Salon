@@ -19,7 +19,7 @@ function App() {
             <Route path="*" element={<h1>Not Found</h1>} />
           </Route>
         </Routes>
-        <div className="h-[100vh] w-[100vw] bg-red-800">Hello</div>
+        {/* <div className="h-[100vh] w-[100vw] bg-red-800">Hello</div> */}
       </div>
     </BrowserRouter>
   )

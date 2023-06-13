@@ -14,7 +14,12 @@ module.exports = {
       md: "480px",
       lg: "768px",
       xl: "1024px",
-      xxl: "1280px",
+      xxl: "1296px",
+    },
+    textColor: {
+      gold: "#CDAA7D",
+      white: "#fff",
+      black: "$000",
     },
     extend: {},
   },
