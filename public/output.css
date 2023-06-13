@@ -623,14 +623,6 @@ video {
   width: 3.125rem;
 }
 
-.w-\[25rem\] {
-  width: 25rem;
-}
-
-.w-\[20rem\] {
-  width: 20rem;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -641,10 +633,6 @@ video {
 
 .justify-center {
   justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
 }
 
 .border {
@@ -729,8 +717,34 @@ video {
   src: url("./components/fonts/cormorant-garamond-semibold.ttf");
 }
 
-body {
-  overflow-x: hidden;
+@media (min-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 1296px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 
 .hover\:text-gold:hover {
@@ -743,43 +757,95 @@ body {
 }
 
 @media (min-width: 320px) {
-  .sm\:invisible {
-    visibility: hidden;
+  .sm\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .sm\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:h-\[2\.5rem\] {
+    height: 2.5rem;
+  }
+
+  .sm\:h-\[3rem\] {
+    height: 3rem;
+  }
+
+  .sm\:h-\[2rem\] {
+    height: 2rem;
+  }
+
+  .sm\:w-\[1\.5rem\] {
+    width: 1.5rem;
+  }
+
+  .sm\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .sm\:w-\[15rem\] {
+    width: 15rem;
+  }
+
+  .sm\:w-\[2rem\] {
+    width: 2rem;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:border-b-0 {
+    border-bottom-width: 0px;
   }
 }
 
 @media (min-width: 480px) {
-  .md\:invisible {
-    visibility: hidden;
-  }
-
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .md\:mr-0 {
+    margin-right: 0px;
   }
 
   .md\:flex {
     display: flex;
   }
 
+  .md\:h-\[3rem\] {
+    height: 3rem;
+  }
+
   .md\:h-\[4rem\] {
     height: 4rem;
   }
 
-  .md\:h-\[6rem\] {
-    height: 6rem;
+  .md\:w-\[100\%\] {
+    width: 100%;
   }
 
-  .md\:h-\[rem\] {
-    height: rem;
-  }
-
-  .md\:h-\[3\.125rem\] {
-    height: 3.125rem;
-  }
-
-  .md\:h-\[3rem\] {
-    height: 3rem;
+  .md\:w-\[2\.5rem\] {
+    width: 2.5rem;
   }
 
   .md\:w-\[25rem\] {
@@ -790,82 +856,30 @@ body {
     width: 2rem;
   }
 
-  .md\:w-0 {
-    width: 0px;
-  }
-
-  .md\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .md\:w-\[100\%\] {
-    width: 100%;
-  }
-
-  .md\:w-\[30rem\] {
-    width: 30rem;
-  }
-
-  .md\:w-\[20rem\] {
-    width: 20rem;
-  }
-
-  .md\:w-\[rem\] {
-    width: rem;
-  }
-
-  .md\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .md\:w-\[90\%\] {
-    width: 90%;
-  }
-
-  .md\:w-\[3\.125rem\] {
-    width: 3.125rem;
-  }
-
   .md\:w-\[3rem\] {
     width: 3rem;
-  }
-
-  .md\:w-\[2\.5rem\] {
-    width: 2.5rem;
   }
 
   .md\:justify-center {
     justify-content: center;
   }
-
-  .md\:justify-between {
-    justify-content: space-between;
-  }
 }
 
 @media (min-width: 768px) {
-  .lg\:invisible {
-    visibility: hidden;
-  }
-
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:h-\[2\.5rem\] {
+    height: 2.5rem;
   }
 
   .lg\:h-\[3\.125rem\] {
     height: 3.125rem;
   }
 
-  .lg\:h-\[3rem\] {
-    height: 3rem;
-  }
-
   .lg\:h-\[4rem\] {
     height: 4rem;
-  }
-
-  .lg\:h-\[2\.5rem\] {
-    height: 2.5rem;
   }
 
   .lg\:w-\[2rem\] {
@@ -884,16 +898,12 @@ body {
     width: 40rem;
   }
 
-  .lg\:justify-between {
-    justify-content: space-between;
+  .lg\:justify-center {
+    justify-content: center;
   }
 }
 
 @media (min-width: 1024px) {
-  .xl\:visible {
-    visibility: visible;
-  }
-
   .xl\:ml-\[2\.5rem\] {
     margin-left: 2.5rem;
   }
@@ -912,6 +922,10 @@ body {
 
   .xl\:mr-\[4rem\] {
     margin-right: 4rem;
+  }
+
+  .xl\:block {
+    display: block;
   }
 
   .xl\:h-\[1\.625rem\] {
@@ -941,21 +955,9 @@ body {
   .xl\:w-\[55rem\] {
     width: 55rem;
   }
-
-  .xl\:justify-center {
-    justify-content: center;
-  }
-
-  .xl\:justify-between {
-    justify-content: space-between;
-  }
 }
 
 @media (min-width: 1296px) {
-  .xxl\:visible {
-    visibility: visible;
-  }
-
   .xxl\:ml-\[5\.9688rem\] {
     margin-left: 5.9688rem;
   }
@@ -974,6 +976,10 @@ body {
 
   .xxl\:mr-\[8\.7813rem\] {
     margin-right: 8.7813rem;
+  }
+
+  .xxl\:block {
+    display: block;
   }
 
   .xxl\:flex {
@@ -1000,6 +1006,10 @@ body {
     width: 1.625rem;
   }
 
+  .xxl\:w-\[100\%\] {
+    width: 100%;
+  }
+
   .xxl\:w-\[2\.5rem\] {
     width: 2.5rem;
   }
@@ -1010,10 +1020,6 @@ body {
 
   .xxl\:w-\[81rem\] {
     width: 81rem;
-  }
-
-  .xxl\:w-\[100\%\] {
-    width: 100%;
   }
 
   .xxl\:justify-between {

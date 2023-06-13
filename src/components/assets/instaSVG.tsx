@@ -1,7 +1,7 @@
 const instaSVG = () => {
   return (
     <svg
-      className="xxl:w-[1.625rem] xxl:h-[1.625rem] xl:w-[1.625rem] xl:h-[1.625rem] lg:w-[3rem] lg:h-[2.5rem] md:w-[2.5rem] md:h-[3rem]"
+      className="xxl:w-[1.625rem] xxl:h-[1.625rem] xl:w-[1.625rem] xl:h-[1.625rem] lg:w-[3rem] lg:h-[2.5rem] md:w-[2.5rem] md:h-[3rem] sm:w-[2rem] sm:h-[2rem]"
       width="26"
       height="26"
       viewBox="0 0 26 26"

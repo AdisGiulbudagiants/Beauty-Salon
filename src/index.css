@@ -23,6 +23,6 @@
   src: url("./components/fonts/cormorant-garamond-semibold.ttf");
 }
 
-body{
-  @apply overflow-x-hidden
+body {
+  @apply xxl:overflow-x-hidden xl:overflow-x-hidden lg:overflow-x-hidden md:overflow-x-hidden sm:overflow-x-hidden;
 }
