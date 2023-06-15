@@ -16,6 +16,11 @@ module.exports = {
       xl: "1024px",
       xxl: "1296px",
     },
+    colors: {
+      gold: "#CDAA7D",
+      white: "#fff",
+      black: "$000",
+    },
     textColor: {
       gold: "#CDAA7D",
       white: "#fff",

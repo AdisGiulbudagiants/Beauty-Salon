@@ -1,7 +1,30 @@
-const instaSVG = () => {
+import { gsap } from "gsap"
+import { useRef } from "react"
+
+const MediaInst = () => {
+  const main = useRef(null)
+  let tl: any = null
+
+  const action = () => {
+    return (tl = gsap.to(main.current, {
+      fill: "#CDAA7D",
+      width: 35,
+      height: 35,
+      ease: "power3.out",
+      duration: 0.3,
+    }))
+  }
+
+  function moveMain() {
+    tl && !tl.reversed() ? tl.reverse() : action()
+  }
+
   return (
     <svg
-      className="xxl:w-[1.625rem] xxl:h-[1.625rem] xl:w-[1.625rem] xl:h-[1.625rem] lg:w-[3rem] lg:h-[2.5rem] md:w-[2.5rem] md:h-[3rem] sm:w-[2rem] sm:h-[2rem]"
+      onMouseEnter={moveMain}
+      onMouseLeave={moveMain}
+      ref={main}
+      className="xxl:w-[1.625rem] xxl:h-[1.625rem] xl:w-[1.625rem] xl:h-[1.625rem] lg:w-[3rem] lg:h-[2.5rem] md:w-[2.5rem] md:h-[3rem] sm:w-[2rem] sm:h-[2rem] "
       width="26"
       height="26"
       viewBox="0 0 26 26"
@@ -27,4 +50,4 @@ const instaSVG = () => {
   )
 }
 
-export default instaSVG
+export default MediaInst
