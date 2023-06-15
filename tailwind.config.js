@@ -19,12 +19,12 @@ module.exports = {
     colors: {
       gold: "#CDAA7D",
       white: "#fff",
-      black: "$000",
+      black: "#000",
     },
     textColor: {
       gold: "#CDAA7D",
       white: "#fff",
-      black: "$000",
+      black: "#000",
     },
     extend: {},
   },
